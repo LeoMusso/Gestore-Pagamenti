@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeoMusso - Gestore Pagamenti</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-toggle" id="navbar-toggle">
+            <div class="toggle-icon"></div>
+        </div>
+        <ul class="navbar-menu" id="navbar-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="profile.html">Profilo</a></li>
+            <li><a href="#">Impostazioni</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="wrapper">
+        <div class="container">
+            <h2>Form Pagamento</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <small><label for="nome">Nome:</label></small>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <small><label for="causa">Causa dell'importo:</label></small>
+                    <input type="text" id="causa" name="causa" required>
+                </div>
+                <div class="form-group">
+                    <button class="satispay" type="submit">
+                        Paga con Satispay
+                    </button>
+                </div>
+                <div class="form-group">
+                    <button class="contanti" type="submit">
+                        Paga in Contanti
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
